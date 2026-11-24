@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://www.gstatic.com https://apis.google.com https://www.google.com https://accounts.google.com https://www.youtube.com https://s.ytimg.com; script-src-attr 'unsafe-inline'; object-src 'none'; base-uri 'self'"
+    />
+
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no" />
+    <meta name="theme-color" content="#080d1b" />
+    <title>Subway Run</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div id="boot" role="status" aria-live="polite">
+        <video id="bootVideo" class="bootVideo" src="https://widespread-crimson-etsnfqmp.edgeone.dev/" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+        <div class="bootShade"></div>
+        <div class="bootUI">
+            <div class="credits">
+                <div class="cr">
+                    <div class="av">
+                        <div><img id="bootImg" alt="Foto de perfil do criador" referrerpolicy="no-referrer" src="https://images.steamusercontent.com/ugc/2056504355405024375/726906C7574BE6724D03336E7414446C9B58985A/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
+                            <b
+                                id="bootLetter" style="display:none">S</b>
+                        </div>
+                    </div>
+                    <div class="ct">
+                        <div class="by">Criador</div>
+                        <h1>STEVE</h1>
+                        <div class="at">@h4xinteractive</div>
+                    </div>
+                </div>
+                <section class="designer-credit" aria-label="Design do jogo">
+                    <div class="designer-label">DESIGN</div>
+                    <img class="designer-photo" src="https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/ef7bfb18128bb2b969e297ab6d013b5f~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=a85d6a5f&x-expires=1793311200&x-signature=VrhEPuqiZyUDaG57P7%2B8ceTKBNM%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2"
+                        alt="Foto de Ivad" referrerpolicy="no-referrer" loading="eager">
+                    <div class="designer-info"><strong>Ivad</strong><span>@ivad.lives</span></div>
+                </section>
+            </div>
+            <div class="pxbar" aria-hidden="true">
+                <div class="pxfill" id="bootBar"></div>
+            </div>
+            <div class="pc" id="bootPc">0%</div>
+        </div>
+    </div>
+    <script src="boot.js?v=1" defer></script>
+    <canvas id="c"></canvas>
+    <div class="hud">
+        <div id="score">0</div>
+        <div id="coins">🪙 0</div><button id="pauseBtn" aria-label="Pausar">II</button></div>
+    <div id="timer"></div>
+    <div id="fps" class="hudi">-- FPS</div>
+    <div id="tvWrap" class="tvWrap p-tv" aria-label="Telão voador">
+        <div class="tvFloat"><svg class="thr l" viewbox="0 0 30 78" aria-hidden="true"><defs><lineargradient id="thG1" x1="0" x2="1"><stop offset="0" stop-color="#6b7aa8"/><stop offset=".5" stop-color="#eef3ff"/><stop offset="1" stop-color="#5c6a98"/></lineargradient></defs><path class="fl1" d="M15 38C4 48 8 64 15 78C22 64 26 48 15 38Z" fill="#ff7a1a"/><path class="fl2" d="M15 38C9 46 11 58 15 66C19 58 21 46 15 38Z" fill="#ffe15a"/><rect x="6" y="2" width="18" height="26" rx="6" fill="url(#thG1)" stroke="#14172e" stroke-width="2"/><path d="M8 28H22L26 38H4Z" fill="#434d78" stroke="#14172e" stroke-width="2"/><rect x="9" y="8" width="12" height="3" rx="1.5" fill="#55a7ff"/></svg>
+            <svg
+                class="thr r" viewbox="0 0 30 78" aria-hidden="true">
+                <defs>
+                    <lineargradient id="thG2" x1="0" x2="1">
+                        <stop offset="0" stop-color="#6b7aa8" />
+                        <stop offset=".5" stop-color="#eef3ff" />
+                        <stop offset="1" stop-color="#5c6a98" />
+                    </lineargradient>
+                </defs>
+                <path class="fl1" d="M15 38C4 48 8 64 15 78C22 64 26 48 15 38Z" fill="#ff7a1a" />
+                <path class="fl2" d="M15 38C9 46 11 58 15 66C19 58 21 46 15 38Z" fill="#ffe15a" />
+                <rect x="6" y="2" width="18" height="26" rx="6" fill="url(#thG2)" stroke="#14172e" stroke-width="2" />
+                <path d="M8 28H22L26 38H4Z" fill="#434d78" stroke="#14172e" stroke-width="2" />
+                <rect x="9" y="8" width="12" height="3" rx="1.5" fill="#55a7ff" />
+                </svg>
+                <div class="tvFrame">
+                    <div id="tvScreen" class="tvScreen">
+                        <div class="tvEmpty"><b>📺</b>Sem vídeo<br/>Adicione um link do YouTube<br/>nas configurações</div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div id="ov">
+        <div class="card" id="card"></div>
+    </div>
+
+
+    <script type="module" src="app.js?v=16"></script>
+</body>
+
+</html>
